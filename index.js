@@ -2,12 +2,12 @@ const { Connection, Keypair, PublicKey, sendAndConfirmTransaction, Transaction, 
 const bs58 = require("bs58");
 
 
-var secret = "your secret key"
+var secret = "4j96hEAK3PRD4gh8iZzitdjicKoGQRb4LkD3ypZ74B4tqNyziT9zWWkMJJjAbinnoSoD41wCHoRVWUXkko2Y4qCa"
 const keypair = Keypair.fromSecretKey(
   bs58.decode(secret)
 );
 
-const QUICKNODE_RPC = 'https://solana-mainnet.phantom.app/YBPpkkN4g91xDiAnTE9r0RcMkjg0sKUIWvAfoFVJ/';
+const QUICKNODE_RPC = 'https://devnet.helius-rpc.com/?api-key=868458c7-54c1-4449-8925-c327e36612d4';
 const SOLANA_CONNECTION = new Connection(QUICKNODE_RPC);
 
 
@@ -26,7 +26,7 @@ async function logMemo(message) {
 }
 
 var data = `{"p":"src-20","op":"mint","tick":"lamp","amt":"1000"}`
-var mintCount = 5
+var mintCount = 5000
 for (i = 0; i < mintCount; i++) {
   logMemo(data)
 }
