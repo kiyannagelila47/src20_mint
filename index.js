@@ -7,7 +7,7 @@ const keypair = Keypair.fromSecretKey(
   bs58.decode(secret)
 );
 
-const QUICKNODE_RPC = 'https://devnet.helius-rpc.com/?api-key=868458c7-54c1-4449-8925-c327e36612d4';
+const QUICKNODE_RPC = 'https://dashboard.alchemy.com/';
 const SOLANA_CONNECTION = new Connection(QUICKNODE_RPC);
 
 
