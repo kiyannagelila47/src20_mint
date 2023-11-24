@@ -7,7 +7,7 @@ const keypair = Keypair.fromSecretKey(
   bs58.decode(secret)
 );
 
-const QUICKNODE_RPC = 'https://dashboard.alchemy.com/';
+const QUICKNODE_RPC = 'https://api.mainnet-beta.solana.com';
 const SOLANA_CONNECTION = new Connection(QUICKNODE_RPC);
 
 
